@@ -1,24 +1,501 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+        <array key="SentyGoldenBell.ttf">
+            <string>SentyGoldenBell</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Gotham_City_e_book" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1538335" translatesAutoresizingMaskIntoConstraints="NO" id="cPI-w7-RhP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3wF-Lk-W94">
+                                <rect key="frame" x="43" y="187" width="288" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SentyGoldenBell" family="Senty Golden Bell Âµ" pointSize="25"/>
+                                <state key="normal" title="劇情大綱和預告片播放">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wMm-6f-2tk" kind="show" id="7kr-mS-6OE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="美劇高譚市介紹" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCS-rd-kU0">
+                                <rect key="frame" x="74" y="52" width="226" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SentyGoldenBell" family="Senty Golden Bell Âµ" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4av-Sl-5ho">
+                                <rect key="frame" x="123" y="131" width="128" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SentyGoldenBell" family="Senty Golden Bell Âµ" pointSize="25"/>
+                                <state key="normal" title="角色介紹">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Lrp-eR-hqW" kind="show" id="gtk-jZ-eVM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bt1" destination="4av-Sl-5ho" id="Sq5-MR-gOq"/>
+                        <outlet property="bt2" destination="3wF-Lk-W94" id="1a5-7v-0Hx"/>
+                        <outlet property="title1" destination="rCS-rd-kU0" id="A1Y-Qp-qJ6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-951" y="114"/>
+        </scene>
+        <!--主要人物-->
+        <scene sceneID="iLY-XB-Yaz">
+            <objects>
+                <viewController id="ujP-d3-sdf" customClass="character" customModule="Gotham_City_e_book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NbZ-AN-trJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="270" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Yt0-Q2-qXV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell1" rowHeight="270" id="bjf-R7-GlJ" customClass="TableViewCell" customModule="Gotham_City_e_book" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="270"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bjf-R7-GlJ" id="yQT-VX-ZaK">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="270"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ibs-WI-OWO">
+                                                    <rect key="frame" x="0.0" y="-28" width="375" height="298"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdn-Xc-Bcn">
+                                                    <rect key="frame" x="96" y="222" width="182" height="37"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="SentyGoldenBell" family="Senty Golden Bell Âµ" pointSize="20"/>
+                                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        </tableViewCellContentView>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <connections>
+                                            <outlet property="img1" destination="ibs-WI-OWO" id="nhC-k2-fGQ"/>
+                                            <outlet property="rolename" destination="rdn-Xc-Bcn" id="1b1-gn-Llo"/>
+                                            <segue destination="bFh-Oi-CUp" kind="show" identifier="segue1" id="dJB-qh-IgS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ujP-d3-sdf" id="ztP-3B-rCd"/>
+                                    <outlet property="delegate" destination="ujP-d3-sdf" id="hAn-Vn-k3i"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Yt0-Q2-qXV" firstAttribute="trailing" secondItem="TxH-rb-WLf" secondAttribute="trailing" id="TeJ-6Z-h3p"/>
+                            <constraint firstItem="Yt0-Q2-qXV" firstAttribute="bottom" secondItem="TxH-rb-WLf" secondAttribute="bottom" id="t4Y-sV-VFy"/>
+                            <constraint firstItem="Yt0-Q2-qXV" firstAttribute="leading" secondItem="TxH-rb-WLf" secondAttribute="leading" id="utA-oX-zyO"/>
+                            <constraint firstItem="Yt0-Q2-qXV" firstAttribute="top" secondItem="NbZ-AN-trJ" secondAttribute="top" id="wQ0-A1-W0e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TxH-rb-WLf"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="主要人物" id="7hC-00-LiV">
+                        <barButtonItem key="leftBarButtonItem" id="AnS-n7-fUq">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uw8-5S-zXM">
+                                <rect key="frame" x="16" y="6" width="51" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="回首頁">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backtomain:" destination="ujP-d3-sdf" eventType="touchUpInside" id="mtF-RB-awS"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableview" destination="Yt0-Q2-qXV" id="bcA-4d-V8i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nV1-ur-ASf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="518" y="-294"/>
+        </scene>
+        <!--Role1-->
+        <scene sceneID="xdg-bn-JKq">
+            <objects>
+                <viewController id="bFh-Oi-CUp" customClass="role1" customModule="Gotham_City_e_book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="76b-rc-Zo6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Nr-xQ-oaB">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EeV-0w-bDn">
+                                <rect key="frame" x="41" y="290" width="293" height="341"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SentyGoldenBell" family="Senty Golden Bell Âµ" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSc-gk-jlU">
+                                <rect key="frame" x="66" y="79" width="243" height="55"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SentyGoldenBell" family="Senty Golden Bell Âµ" pointSize="20"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2Xn-r0-m8q"/>
+                    </view>
+                    <connections>
+                        <outlet property="background" destination="8Nr-xQ-oaB" id="DDc-kh-e2a"/>
+                        <outlet property="name" destination="QSc-gk-jlU" id="vW7-Kg-Vq9"/>
+                        <outlet property="role_display" destination="EeV-0w-bDn" id="ZKe-9X-Sli"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Fu-Av-JsJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1354" y="-304"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="0Gb-HR-Ai9">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="wMm-6f-2tk" customClass="pageviewcontroller" customModule="Gotham_City_e_book" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="cET-Yi-yVw"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2RI-Zv-SmP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-951" y="907"/>
+        </scene>
+        <!--Season1-->
+        <scene sceneID="F8e-M9-mir">
+            <objects>
+                <viewController storyboardIdentifier="s1" id="4QN-NE-94s" customClass="season1" customModule="Gotham_City_e_book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fax-t1-hLB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="g１" translatesAutoresizingMaskIntoConstraints="NO" id="0Oh-Kh-46m">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1N-WM-XCg">
+                                <rect key="frame" x="16" y="64" width="343" height="506"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <string key="text">烏雲籠罩的罪惡都市「高譚市」，上有貪腐污吏、下有黑幫橫行，犯罪率上升到了史無前例的級別。各個有錢、有權、有勢者開始趁火打劫般的將城市拿捏到股掌中，只有單單小部分的正義人士才敢站出來與他們對抗。一位新進警員詹姆斯·高登成為了一名勇敢站出來與惡勢力對抗的警察，由於是剛接觸城市不久而到最後才發現是自己的理想過於簡單，而自己猶如一隻對抗數隻鯨魚的「小蝦米」。高譚市的地下惡勢力如同一個錯綜複雜的迷宮，除了一群經營黑幫家族生意的大佬以外、還有一大群狙擊陌生人的有權有勢者，正在暗地裏操控這座城市。期間，為了保持現狀的韋恩夫婦慘遭殺害，使得高登開始執著般地追查真相，但黑幫之間的內戰也因為這對夫婦的死而即將浮出水面……</string>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SentyGoldenBell" family="Senty Golden Bell Âµ" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBa-Oa-82o">
+                                <rect key="frame" x="54" y="29" width="266" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <string key="text">萬惡高譚市第一季劇情大綱
+</string>
+                                <fontDescription key="fontDescription" name="SentyGoldenBell" family="Senty Golden Bell Âµ" pointSize="20"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0X-kj-Bx4">
+                                <rect key="frame" x="16" y="602" width="92" height="45"/>
+                                <fontDescription key="fontDescription" name="SentyGoldenBell" family="Senty Golden Bell Âµ" pointSize="17"/>
+                                <state key="normal" title="預告片欣賞">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="moviebtn_act:" destination="4QN-NE-94s" eventType="touchUpInside" id="IEN-5Q-xEU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSU-O0-4li">
+                                <rect key="frame" x="285" y="602" width="74" height="45"/>
+                                <fontDescription key="fontDescription" name="SentyGoldenBell" family="Senty Golden Bell Âµ" pointSize="17"/>
+                                <state key="normal" title="返回首頁">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="3sx-Dx-3HL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uyp-3Q-3rz" firstAttribute="trailing" secondItem="TSU-O0-4li" secondAttribute="trailing" constant="16" id="0zM-d0-unV"/>
+                            <constraint firstItem="uyp-3Q-3rz" firstAttribute="bottom" secondItem="s0X-kj-Bx4" secondAttribute="bottom" constant="20" id="Vk2-Gp-5A5"/>
+                            <constraint firstItem="uyp-3Q-3rz" firstAttribute="bottom" secondItem="TSU-O0-4li" secondAttribute="bottom" constant="20" id="lKf-7F-7ZE"/>
+                            <constraint firstItem="s0X-kj-Bx4" firstAttribute="leading" secondItem="uyp-3Q-3rz" secondAttribute="leading" constant="16" id="w3g-ht-cAi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uyp-3Q-3rz"/>
+                    </view>
+                    <connections>
+                        <outlet property="moviebtn" destination="s0X-kj-Bx4" id="9j7-oe-2Bw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="02K-56-6la" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26" y="842"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Q02-ik-aSe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lrp-eR-hqW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Bai-8S-Oxs">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ujP-d3-sdf" kind="relationship" relationship="rootViewController" id="fjG-rx-u5q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vaI-YQ-VNb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-230" y="-294"/>
+        </scene>
+        <!--Season2-->
+        <scene sceneID="W3R-vG-LuO">
+            <objects>
+                <viewController storyboardIdentifier="s2" id="YKs-ix-yWG" customClass="season2" customModule="Gotham_City_e_book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vA1-NN-2rD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="season2" translatesAutoresizingMaskIntoConstraints="NO" id="Ccy-4h-Svu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUd-o9-519">
+                                <rect key="frame" x="16" y="68" width="343" height="531"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <string key="text">黑幫時代告終後，來勢洶洶的希歐·蓋勒文與其妹妹塔比莎蒞臨了城市，很快就在城市中奪下了崇高地位，但暗地裏卻是策劃了城市各個血腥案件的始作俑者。當高登開始私自著手調查蓋勒文家族的背景時，發現他們兄妹倆其實出生於一個跟韋恩家族烙下仇恨的世家，在企圖阻止他們時卻不僅遭到他的新上司制止，而蓋勒文也靠「賊喊捉賊」的招數攻下了市長的階級，由於別無他法，高登下只能打破界限去和惡勢力合作，而當他經歷了人生第一次痛下殺手後，開始陷在謀殺的罪惡感與恐懼之中。當時，位於城市「阿卡漢精神病院」的地下，一個韋恩企業旗下的神秘科學部門中，被一位瘋狂科學家雨果·史特蘭奇掌控，進行了一個又一個瘋狂科學實驗。另一方面，布魯斯距離找到殺害父母的兇手更進一步時，發現除了兇手本人以外，還有一個更強大的「第三方」在幕後主導著一切。</string>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SentyGoldenBell" family="Senty Golden Bell Âµ" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWU-XY-y0A">
+                                <rect key="frame" x="57" y="32" width="261" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <string key="text">萬惡高譚市第二季劇情大綱
+</string>
+                                <fontDescription key="fontDescription" name="SentyGoldenBell" family="Senty Golden Bell Âµ" pointSize="20"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xqd-De-QZH">
+                                <rect key="frame" x="16" y="602" width="92" height="45"/>
+                                <fontDescription key="fontDescription" name="SentyGoldenBell" family="Senty Golden Bell Âµ" pointSize="17"/>
+                                <state key="normal" title="預告片欣賞">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sea2_act:" destination="YKs-ix-yWG" eventType="touchUpInside" id="LUa-Nd-JSf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Uf-bn-NqY">
+                                <rect key="frame" x="285" y="602" width="74" height="45"/>
+                                <fontDescription key="fontDescription" name="SentyGoldenBell" family="Senty Golden Bell Âµ" pointSize="17"/>
+                                <state key="normal" title="返回首頁">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Q4h-g9-HbJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VXI-PH-KBE" firstAttribute="bottom" secondItem="1Uf-bn-NqY" secondAttribute="bottom" constant="20" id="F6D-BW-Lcc"/>
+                            <constraint firstItem="Xqd-De-QZH" firstAttribute="leading" secondItem="VXI-PH-KBE" secondAttribute="leading" constant="16" id="LBm-wb-ZQC"/>
+                            <constraint firstItem="VXI-PH-KBE" firstAttribute="trailing" secondItem="1Uf-bn-NqY" secondAttribute="trailing" constant="16" id="Mkm-qV-CTH"/>
+                            <constraint firstItem="VXI-PH-KBE" firstAttribute="bottom" secondItem="Xqd-De-QZH" secondAttribute="bottom" constant="20" id="kqC-qu-H86"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VXI-PH-KBE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cAf-ss-H1t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="743" y="842"/>
+        </scene>
+        <!--Season3-->
+        <scene sceneID="WaL-Er-Rf4">
+            <objects>
+                <viewController storyboardIdentifier="s3" id="dgT-tH-oGh" customClass="season3" customModule="Gotham_City_e_book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cwa-v4-ONt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="s3" translatesAutoresizingMaskIntoConstraints="NO" id="BUs-yx-n86">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="677"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XP7-IY-OKh">
+                                <rect key="frame" x="16" y="68" width="343" height="502"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <string key="text">自從由雨果·史特蘭奇靠非法實驗復活的多數實驗對象，在經歷死而復生的費雪·穆妮的帶領下逃脫後，城市在半年期間出現多個瘋狂事件。高登因為失去愛人而拋棄了警察職務，開始在各處搜捕怪物來討生活，認為以此可以彌補心中的殘缺。另一方面，自從蓋勒文帶著罪孽身亡後，奧斯華找準時機奪下了市長職位，受部分無政府市民愛戴時也得到部分人的不滿。一個神秘恐怖的催眠師傑維斯·泰奇為尋找失散多時的妹妹而蒞臨了城市，並因為後來產生的恩怨而和高登成為死對頭，他瞄準了高登心中對愛人的愧疚作為武器，屢次將高登逼入絕境。一個由無政府份子組成的邪教組織通過跟雨果相同的技術，復活了轟動一時的瘋「笑」罪犯—傑羅姆·沃洛斯卡，使城市的安危再一次受到威脅。所有人在對抗彼此的同時，一個掌控了城市長達數世紀的神秘團體，已經受令準備好對城市進行「淨化」以清除罪惡根源。而在幕後指揮著團體的「神秘主上」，也開始將魔爪慢慢伸向布魯斯·韋恩。</string>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SentyGoldenBell" family="Senty Golden Bell Âµ" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJG-Xg-RSq">
+                                <rect key="frame" x="58" y="33" width="259" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <string key="text">萬惡高譚市第三季劇情大綱
+</string>
+                                <fontDescription key="fontDescription" name="SentyGoldenBell" family="Senty Golden Bell Âµ" pointSize="20"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FqI-cY-eos">
+                                <rect key="frame" x="16" y="602" width="92" height="45"/>
+                                <fontDescription key="fontDescription" name="SentyGoldenBell" family="Senty Golden Bell Âµ" pointSize="17"/>
+                                <state key="normal" title="預告片欣賞">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sea3_act:" destination="dgT-tH-oGh" eventType="touchUpInside" id="0la-kz-ixt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4A-sf-Ow1">
+                                <rect key="frame" x="285" y="602" width="74" height="45"/>
+                                <fontDescription key="fontDescription" name="SentyGoldenBell" family="Senty Golden Bell Âµ" pointSize="17"/>
+                                <state key="normal" title="返回首頁">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="86K-on-4FJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FqI-cY-eos" firstAttribute="leading" secondItem="nUP-L7-kwn" secondAttribute="leading" constant="16" id="81X-1l-MRe"/>
+                            <constraint firstItem="nUP-L7-kwn" firstAttribute="trailing" secondItem="z4A-sf-Ow1" secondAttribute="trailing" constant="16" id="hT2-Os-iaH"/>
+                            <constraint firstItem="nUP-L7-kwn" firstAttribute="bottom" secondItem="z4A-sf-Ow1" secondAttribute="bottom" constant="20" id="iuA-43-GTF"/>
+                            <constraint firstItem="nUP-L7-kwn" firstAttribute="bottom" secondItem="FqI-cY-eos" secondAttribute="bottom" constant="20" id="yUA-3x-fig"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nUP-L7-kwn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jmO-g3-Dse" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1454" y="842"/>
+        </scene>
+        <!--Season4-->
+        <scene sceneID="fo2-HD-9dO">
+            <objects>
+                <viewController storyboardIdentifier="s4" id="Hze-3M-mTV" customClass="season4" customModule="Gotham_City_e_book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CzQ-bm-1FU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="s4" translatesAutoresizingMaskIntoConstraints="NO" id="oSu-9x-xrg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjd-uv-eNj">
+                                <rect key="frame" x="16" y="68" width="343" height="483"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <string key="text">貓頭鷹法庭時代覆滅後，高譚市進入「企鵝治世時期」，發布“執照體系”來准許罪犯能在警察無干涉的情況下犯罪。所有警察包括布洛克都決定妥協企鵝人的勢力，和惡勢力孤軍奮戰的高登體驗到前所未有的孤獨，在走投無路下去求昔日城市黑幫大佬卡麥·法爾康尼幫忙。由於法爾康尼已年邁體虛，他身邊的女兒蘇菲亞決定繼承父親衣缽，回到家鄉高譚為家族重振旗鼓。她在秘密接近企鵝人的同時，也在慢慢搭建屬於她的黑幫帝國，而她和亦敵亦友的高登也慢慢成為搭檔且秘密戀人關係。另一方面，布魯斯如今當起城市街道中的黑暗義警，懲奸鬥惡途中也在預備法庭真正幕後主使「忍者大師」的歸來；但他卻不知道，忍者大師早已躲在高譚市的暗處主導一切，甚至還在窺視著他。</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="SentyGoldenBell" family="Senty Golden Bell Âµ" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V94-Hk-Lwd">
+                                <rect key="frame" x="55" y="33" width="264" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <string key="text">萬惡高譚市第四季劇情大綱
+</string>
+                                <fontDescription key="fontDescription" name="SentyGoldenBell" family="Senty Golden Bell Âµ" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dI0-3w-H2V">
+                                <rect key="frame" x="16" y="602" width="92" height="45"/>
+                                <fontDescription key="fontDescription" name="SentyGoldenBell" family="Senty Golden Bell Âµ" pointSize="17"/>
+                                <state key="normal" title="預告片欣賞">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sea4_act:" destination="Hze-3M-mTV" eventType="touchUpInside" id="c19-fr-tJH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4O-Qe-U2Y">
+                                <rect key="frame" x="285" y="602" width="74" height="45"/>
+                                <fontDescription key="fontDescription" name="SentyGoldenBell" family="Senty Golden Bell Âµ" pointSize="17"/>
+                                <state key="normal" title="返回首頁">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="4pf-bn-rLv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dI0-3w-H2V" firstAttribute="leading" secondItem="8nf-hh-OlA" secondAttribute="leading" constant="16" id="0R5-1h-Nqo"/>
+                            <constraint firstItem="8nf-hh-OlA" firstAttribute="trailing" secondItem="f4O-Qe-U2Y" secondAttribute="trailing" constant="16" id="0Rt-Z2-rhF"/>
+                            <constraint firstItem="8nf-hh-OlA" firstAttribute="bottom" secondItem="dI0-3w-H2V" secondAttribute="bottom" constant="20" id="eWN-Fy-K3V"/>
+                            <constraint firstItem="8nf-hh-OlA" firstAttribute="bottom" secondItem="f4O-Qe-U2Y" secondAttribute="bottom" constant="20" id="yN1-VL-4Ty"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8nf-hh-OlA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="agC-Sm-cad" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2174" y="842"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1538335" width="259" height="383"/>
+        <image name="g１" width="706" height="1024"/>
+        <image name="s3" width="311" height="483"/>
+        <image name="s4" width="369" height="570"/>
+        <image name="season2" width="719" height="960"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="4pf-bn-rLv"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

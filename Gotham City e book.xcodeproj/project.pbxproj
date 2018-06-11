@@ -7,13 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		074008351FD5816000912C47 /* pageviewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074008341FD5816000912C47 /* pageviewcontroller.swift */; };
 		075F14341FCC040F004EFCCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F14331FCC040F004EFCCF /* AppDelegate.swift */; };
 		075F14361FCC040F004EFCCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F14351FCC040F004EFCCF /* ViewController.swift */; };
 		075F14391FCC0410004EFCCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 075F14371FCC0410004EFCCF /* Main.storyboard */; };
-		075F143B1FCC0410004EFCCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 075F143A1FCC0410004EFCCF /* Assets.xcassets */; };
 		075F143E1FCC0410004EFCCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 075F143C1FCC0410004EFCCF /* LaunchScreen.storyboard */; };
 		075F14491FCC0410004EFCCF /* Gotham_City_e_bookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F14481FCC0410004EFCCF /* Gotham_City_e_bookTests.swift */; };
 		075F14541FCC0410004EFCCF /* Gotham_City_e_bookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F14531FCC0410004EFCCF /* Gotham_City_e_bookUITests.swift */; };
+		0775D3191FD67D2400B7A4A1 /* season1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0775D3181FD67D2400B7A4A1 /* season1.swift */; };
+		0775D31B1FD67D3600B7A4A1 /* season2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0775D31A1FD67D3600B7A4A1 /* season2.swift */; };
+		0775D31D1FD67D4400B7A4A1 /* season3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0775D31C1FD67D4400B7A4A1 /* season3.swift */; };
+		0775D31F1FD67D5400B7A4A1 /* season4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0775D31E1FD67D5400B7A4A1 /* season4.swift */; };
+		0775D3251FD685B200B7A4A1 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0775D3231FD6859A00B7A4A1 /* AVKit.framework */; };
+		0775D3261FD685BC00B7A4A1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0775D3241FD6859A00B7A4A1 /* AVFoundation.framework */; };
+		0775D32C1FD686B600B7A4A1 /* Gotham - Season 1 Preview.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0775D3281FD686B400B7A4A1 /* Gotham - Season 1 Preview.mp4 */; };
+		0775D32D1FD686B600B7A4A1 /* Gotham Season 4 Dark Knight Trailer (HD).mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0775D3291FD686B400B7A4A1 /* Gotham Season 4 Dark Knight Trailer (HD).mp4 */; };
+		0775D32E1FD686B600B7A4A1 /* Gotham - Season 3 _ official trailer (2016) Comic-Con SDCC.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0775D32A1FD686B500B7A4A1 /* Gotham - Season 3 _ official trailer (2016) Comic-Con SDCC.mp4 */; };
+		0775D32F1FD686B600B7A4A1 /* Gotham Season 2 New York Comic-Con Trailer (HD).mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0775D32B1FD686B600B7A4A1 /* Gotham Season 2 New York Comic-Con Trailer (HD).mp4 */; };
+		0775D3311FD6954700B7A4A1 /* character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0775D3301FD6954700B7A4A1 /* character.swift */; };
+		0775D3331FD69D3A00B7A4A1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0775D3321FD69D3A00B7A4A1 /* TableViewCell.swift */; };
+		07779F771FD90942001BE20A /* role1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07779F761FD90942001BE20A /* role1.swift */; };
+		0778C3271FCEA8FE006161A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0778C3261FCEA8FE006161A4 /* Assets.xcassets */; };
+		0778C3281FCEA8FE006161A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0778C3261FCEA8FE006161A4 /* Assets.xcassets */; };
+		0778C3291FCEA8FE006161A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0778C3261FCEA8FE006161A4 /* Assets.xcassets */; };
+		0778C32C1FCEB203006161A4 /* SentyGoldenBell.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0778C32B1FCEB203006161A4 /* SentyGoldenBell.ttf */; };
+		0784191F1FD00F1100F2AC34 /* 腾祥铁山楷书繁.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0784191E1FD00F1100F2AC34 /* 腾祥铁山楷书繁.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +52,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		074008341FD5816000912C47 /* pageviewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pageviewcontroller.swift; sourceTree = "<group>"; };
 		075F14301FCC040F004EFCCF /* Gotham City e book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gotham City e book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		075F14331FCC040F004EFCCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		075F14351FCC040F004EFCCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		075F14381FCC0410004EFCCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		075F143A1FCC0410004EFCCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		075F143D1FCC0410004EFCCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		075F143F1FCC0410004EFCCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		075F14441FCC0410004EFCCF /* Gotham City e bookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gotham City e bookTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +65,22 @@
 		075F144F1FCC0410004EFCCF /* Gotham City e bookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gotham City e bookUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		075F14531FCC0410004EFCCF /* Gotham_City_e_bookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gotham_City_e_bookUITests.swift; sourceTree = "<group>"; };
 		075F14551FCC0410004EFCCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0775D3181FD67D2400B7A4A1 /* season1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = season1.swift; sourceTree = "<group>"; };
+		0775D31A1FD67D3600B7A4A1 /* season2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = season2.swift; sourceTree = "<group>"; };
+		0775D31C1FD67D4400B7A4A1 /* season3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = season3.swift; sourceTree = "<group>"; };
+		0775D31E1FD67D5400B7A4A1 /* season4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = season4.swift; sourceTree = "<group>"; };
+		0775D3231FD6859A00B7A4A1 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		0775D3241FD6859A00B7A4A1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0775D3281FD686B400B7A4A1 /* Gotham - Season 1 Preview.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham - Season 1 Preview.mp4"; sourceTree = "<group>"; };
+		0775D3291FD686B400B7A4A1 /* Gotham Season 4 Dark Knight Trailer (HD).mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham Season 4 Dark Knight Trailer (HD).mp4"; sourceTree = "<group>"; };
+		0775D32A1FD686B500B7A4A1 /* Gotham - Season 3 _ official trailer (2016) Comic-Con SDCC.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham - Season 3 _ official trailer (2016) Comic-Con SDCC.mp4"; sourceTree = "<group>"; };
+		0775D32B1FD686B600B7A4A1 /* Gotham Season 2 New York Comic-Con Trailer (HD).mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham Season 2 New York Comic-Con Trailer (HD).mp4"; sourceTree = "<group>"; };
+		0775D3301FD6954700B7A4A1 /* character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = character.swift; sourceTree = "<group>"; };
+		0775D3321FD69D3A00B7A4A1 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		07779F761FD90942001BE20A /* role1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = role1.swift; sourceTree = "<group>"; };
+		0778C3261FCEA8FE006161A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		0778C32B1FCEB203006161A4 /* SentyGoldenBell.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SentyGoldenBell.ttf; sourceTree = "<group>"; };
+		0784191E1FD00F1100F2AC34 /* 腾祥铁山楷书繁.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "腾祥铁山楷书繁.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0775D3261FD685BC00B7A4A1 /* AVFoundation.framework in Frameworks */,
+				0775D3251FD685B200B7A4A1 /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +113,13 @@
 		075F14271FCC040F004EFCCF = {
 			isa = PBXGroup;
 			children = (
+				0775D3271FD6867F00B7A4A1 /* preview movie */,
+				0778C32A1FCEB18B006161A4 /*  Font */,
 				075F14321FCC040F004EFCCF /* Gotham City e book */,
 				075F14471FCC0410004EFCCF /* Gotham City e bookTests */,
 				075F14521FCC0410004EFCCF /* Gotham City e bookUITests */,
 				075F14311FCC040F004EFCCF /* Products */,
+				0775D3221FD6859A00B7A4A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +138,18 @@
 			children = (
 				075F14331FCC040F004EFCCF /* AppDelegate.swift */,
 				075F14351FCC040F004EFCCF /* ViewController.swift */,
+				0778C3261FCEA8FE006161A4 /* Assets.xcassets */,
 				075F14371FCC0410004EFCCF /* Main.storyboard */,
-				075F143A1FCC0410004EFCCF /* Assets.xcassets */,
 				075F143C1FCC0410004EFCCF /* LaunchScreen.storyboard */,
 				075F143F1FCC0410004EFCCF /* Info.plist */,
+				074008341FD5816000912C47 /* pageviewcontroller.swift */,
+				0775D3181FD67D2400B7A4A1 /* season1.swift */,
+				0775D31A1FD67D3600B7A4A1 /* season2.swift */,
+				0775D31C1FD67D4400B7A4A1 /* season3.swift */,
+				0775D31E1FD67D5400B7A4A1 /* season4.swift */,
+				0775D3301FD6954700B7A4A1 /* character.swift */,
+				0775D3321FD69D3A00B7A4A1 /* TableViewCell.swift */,
+				07779F761FD90942001BE20A /* role1.swift */,
 			);
 			path = "Gotham City e book";
 			sourceTree = "<group>";
@@ -123,6 +170,35 @@
 				075F14551FCC0410004EFCCF /* Info.plist */,
 			);
 			path = "Gotham City e bookUITests";
+			sourceTree = "<group>";
+		};
+		0775D3221FD6859A00B7A4A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0775D3241FD6859A00B7A4A1 /* AVFoundation.framework */,
+				0775D3231FD6859A00B7A4A1 /* AVKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0775D3271FD6867F00B7A4A1 /* preview movie */ = {
+			isa = PBXGroup;
+			children = (
+				0775D3281FD686B400B7A4A1 /* Gotham - Season 1 Preview.mp4 */,
+				0775D32A1FD686B500B7A4A1 /* Gotham - Season 3 _ official trailer (2016) Comic-Con SDCC.mp4 */,
+				0775D32B1FD686B600B7A4A1 /* Gotham Season 2 New York Comic-Con Trailer (HD).mp4 */,
+				0775D3291FD686B400B7A4A1 /* Gotham Season 4 Dark Knight Trailer (HD).mp4 */,
+			);
+			path = "preview movie";
+			sourceTree = "<group>";
+		};
+		0778C32A1FCEB18B006161A4 /*  Font */ = {
+			isa = PBXGroup;
+			children = (
+				0784191E1FD00F1100F2AC34 /* 腾祥铁山楷书繁.ttf */,
+				0778C32B1FCEB203006161A4 /* SentyGoldenBell.ttf */,
+			);
+			path = " Font";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +308,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0784191F1FD00F1100F2AC34 /* 腾祥铁山楷书繁.ttf in Resources */,
+				0775D32D1FD686B600B7A4A1 /* Gotham Season 4 Dark Knight Trailer (HD).mp4 in Resources */,
 				075F143E1FCC0410004EFCCF /* LaunchScreen.storyboard in Resources */,
-				075F143B1FCC0410004EFCCF /* Assets.xcassets in Resources */,
+				0778C3271FCEA8FE006161A4 /* Assets.xcassets in Resources */,
+				0775D32E1FD686B600B7A4A1 /* Gotham - Season 3 _ official trailer (2016) Comic-Con SDCC.mp4 in Resources */,
+				0778C32C1FCEB203006161A4 /* SentyGoldenBell.ttf in Resources */,
+				0775D32F1FD686B600B7A4A1 /* Gotham Season 2 New York Comic-Con Trailer (HD).mp4 in Resources */,
 				075F14391FCC0410004EFCCF /* Main.storyboard in Resources */,
+				0775D32C1FD686B600B7A4A1 /* Gotham - Season 1 Preview.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +324,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0778C3281FCEA8FE006161A4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +332,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0778C3291FCEA8FE006161A4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +344,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				075F14361FCC040F004EFCCF /* ViewController.swift in Sources */,
+				07779F771FD90942001BE20A /* role1.swift in Sources */,
 				075F14341FCC040F004EFCCF /* AppDelegate.swift in Sources */,
+				0775D3191FD67D2400B7A4A1 /* season1.swift in Sources */,
+				0775D3331FD69D3A00B7A4A1 /* TableViewCell.swift in Sources */,
+				0775D3311FD6954700B7A4A1 /* character.swift in Sources */,
+				074008351FD5816000912C47 /* pageviewcontroller.swift in Sources */,
+				0775D31D1FD67D4400B7A4A1 /* season3.swift in Sources */,
+				0775D31F1FD67D5400B7A4A1 /* season4.swift in Sources */,
+				0775D31B1FD67D3600B7A4A1 /* season2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
